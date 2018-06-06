@@ -11,7 +11,7 @@ node {
     checkout scm
 
     // Build Docker image
-   stage 'Train Model(s)
+   stage 'Train Model(s)'
    echo 'Test accuracy and measure inference time.'
 
 
