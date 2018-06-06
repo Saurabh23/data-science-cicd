@@ -11,29 +11,20 @@ node {
     checkout scm
 
     // Build Docker image
-   stage('Train Model(s)') {
-            steps {
-                echo 'Test accuracy and measure inference time.'
-            }
-        }
+   stage 'Train Model(s)
+   echo 'Test accuracy and measure inference time.'
 
 
-  stage('Optimize Model(s)') {
-            steps {
-                echo 'Test accuracy and measure inference time.'
-            }
-        }
+  stage 'Optimize Model(s)'
+  echo 'Test accuracy and measure inference time.'
 
 
-    // Test
-    stage('Test') {
-            steps {
-                echo 'Test accuracy and measure inference time.'
-            }
-        }
+  // Test
+  stage 'Test' 
+  echo 'Test accuracy and measure inference time.'
 
-    // Deploy
-    stage 'Deploy'
+  // Deploy
+ stage 'Deploy'
 
     marathon(
         url: 'http://marathon.mesos:8080',
