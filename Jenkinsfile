@@ -23,6 +23,10 @@ node {
   stage 'Test' 
   echo 'Test accuracy and measure inference time.'
 
+  // Test
+  stage 'Build Serving container'
+  echo 'Build TensorFlow Serving Container.'
+
   // Deploy
  stage 'Deploy'
 
