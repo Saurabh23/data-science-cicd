@@ -13,6 +13,7 @@ node {
     // Build Docker image
    stage 'Train Model(s)'
    echo 'Test accuracy and measure inference time.'
+   sh "mnsit.py"
    sh 'sleep 10'
 
   stage 'Optimize Model(s)'
