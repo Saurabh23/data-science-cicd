@@ -27,12 +27,5 @@ node {
   stage 'Build Serving container'
   echo 'Build TensorFlow Serving Container.'
 
-  // Deploy
- stage 'Deploy'
-
-    marathon(
-        url: 'http://marathon.mesos:8080',
-        forceUpdate: false,
-        filename: 'marathon.json',
-    )
+  
 }
