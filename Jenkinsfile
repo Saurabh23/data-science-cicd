@@ -13,6 +13,7 @@ node {
     // Build Docker image
    stage 'Train Model(s)'
    echo 'Test accuracy and measure inference time.'
+   sh 'python wine.py'
    
    sh 'sleep 10'
 
