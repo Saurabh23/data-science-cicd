@@ -8,6 +8,7 @@ def gitCommit = readFile('GIT_COMMIT').trim()
 node {
     // Checkout source code from Git
     stage 'Checkout'
+    sh "echo $path" 
     checkout scm
 
     // Build Docker image
