@@ -17,7 +17,10 @@ node {
    echo "$path" 
     
    echo 'Test accuracy and measure inference time.'
-   //sh 'python wine.py'
+     
+
+   sh 'pip install -r requirements.txt'
+   sh 'python wine.py'
    sh 'python hello.py'
    
    sh 'sleep 10'
