@@ -9,14 +9,13 @@ node {
     // Checkout source code from Git
     stage 'Checkout'
     
-    echo "$path" 
-    //sh 'Python path: '
-    echo "$PYTHONPATH"
     
     checkout scm
 
     // Build Docker image
    stage 'Train Model(s)'
+   echo "$path" 
+    
    echo 'Test accuracy and measure inference time.'
    sh 'python hello.py'
    
