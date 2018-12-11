@@ -9,9 +9,9 @@ node {
     // Checkout source code from Git
     stage 'Checkout'
     
-    sh "echo $path" 
+    echo "$path" 
     //sh 'Python path: '
-    sh "echo $PYTHONPATH"
+    echo "$PYTHONPATH"
     
     checkout scm
 
