@@ -11,7 +11,7 @@ node {
     sh 'Path: '
     sh "echo $path" 
     sh 'Python path: '
-    sh "echo $PYTHONPATH"
+    //sh "echo $PYTHONPATH"
     
     checkout scm
 
