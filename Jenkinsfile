@@ -21,7 +21,7 @@ node {
      
 
    sh 'python3 -m pip install pandas'
-   sh 'python wine.py'
+   sh 'python3 wine.py'
    sh 'python hello.py'
    
    sh 'sleep 10'
