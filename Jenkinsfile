@@ -8,7 +8,7 @@ def gitCommit = readFile('GIT_COMMIT').trim()
 node {
     // Checkout source code from Git
     stage 'Checkout'
-    sh "pip freeze"
+    sh "pip3 freeze"
     
     
     checkout scm
