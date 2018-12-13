@@ -20,8 +20,8 @@ node {
    echo 'Test accuracy and measure inference time.'
      
 
-   sh 'which python'
-   sh 'which python3' 
+   sh 'python --version'
+   sh 'python3 --version' 
    sh 'python3 wine.py'
    
    sh 'sleep 10'
