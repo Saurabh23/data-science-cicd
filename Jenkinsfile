@@ -20,9 +20,9 @@ node {
    echo 'Test accuracy and measure inference time.'
      
 
-   sh 'python3 -m pip install pandas'
+   sh 'which python'
+   sh 'which python3' 
    sh 'python3 wine.py'
-   sh 'python hello.py'
    
    sh 'sleep 10'
 
