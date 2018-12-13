@@ -19,7 +19,7 @@ node {
    echo 'Test accuracy and measure inference time.'
      
 
-   sh 'pip3 install -r requirements.txt'
+   sh 'python3 -m pip install -r --user requirements.txt'
    sh 'python wine.py'
    sh 'python hello.py'
    
