@@ -23,7 +23,7 @@ node {
    sh 'python --version'
    sh 'python3 --version' 
    
-   sh 'python3 wine_mlflow.py 0.8 0.3'
+   sh 'python3 wine_mlflow.py 0.3 0.5'
    
    sh 'sleep 10'
 
