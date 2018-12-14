@@ -22,7 +22,7 @@ node {
 
    sh 'python --version'
    sh 'python3 --version' 
-   sh 'python3 wine_mlflow.py'
+   sh 'python3 wine_mlflow.py alpha = 0.8 l1_ratio = 0.3'
    
    sh 'sleep 10'
 
