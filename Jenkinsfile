@@ -20,8 +20,8 @@ node {
    echo 'Test accuracy and measure inference time.'
      
 
-   sh 'python --version'
-   sh 'python3 --version' 
+   //sh 'python --version'
+   //sh 'python3 --version' 
    
    sh 'python3 wine_mlflow.py 0.999 0.999'
    
