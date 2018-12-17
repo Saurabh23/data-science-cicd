@@ -41,7 +41,7 @@ node {
     //deploy to port 1235
   sh 'python3 -m pip install mlflow'
   //sh 'mlflow pyfunc serve /var/lib/jenkins/workspace/ML Pipeline2/mlruns/0/9abd56d09e7740ff847f8de0fcdbac44/artifacts/model$  -p 1235'
-  sh 'curl -X POST -H "Content-Type:application/json; format=pandas-split" --"data":[[1.8, 0.029, 0.48, 0.98, 0.2, 01, 0.33, 0.2, 0.01, 1, 0.11]]}' http://127.0.0.1:1238/invocations'
+  sh “curl -X POST -H "Content-Type:application/json; format=pandas-split" --data '{"columns":["alcohol", "chlorides", "citric acid", "density", "fixed acidity", "free sulfur dioxide", "pH", "residual sugar", "sulphates", "total sulfur dioxide", "volatile acidity"],"data":[[1.8, 0.029, 0.48, 0.98, 0.2, 01, 0.33, 0.2, 0.01, 1, 0.11]]}' 'http://127.0.0.1:1238/invocations'”
 
   
 }
