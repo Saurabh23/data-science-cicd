@@ -40,7 +40,7 @@ node {
   echo 'Build TensorFlow Serving Container.'
   //sh 'git clone https://github.com/mlflow/mlflow-example'
   //sh 'cd mlflow-example'
-  sh 'python3 mlflow-example/train.py -P alpha=0.43'
+  sh 'python3 mlflow-example/train.py alpha=0.43'
     //deploy to port 1235
   //sh 'python3 -m pip install mlflow'
   //sh 'mlflow pyfunc serve /var/lib/jenkins/workspace/ML Pipeline2/mlruns/0/9abd56d09e7740ff847f8de0fcdbac44/artifacts/model$  -p 1235'
