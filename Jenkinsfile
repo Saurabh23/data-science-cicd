@@ -39,9 +39,12 @@ node {
   stage 'Build Serving container'
   echo 'Build TensorFlow Serving Container.'
   //sh 'git clone https://github.com/mlflow/mlflow-example'
-  //sh 'cd mlflow-example'
-  sh 'mv mlflow-example /home/sgawande/Documents/ci/mlflow'
-  sh 'cd /home/sgawande/Documents/ci/mlflow/mlflow-example'
+  sh 'cd /home/sgawande/Documents/ci/mlflow'
+  sh 'git clone https://github.com/mlflow/mlflow-example'
+  sh 'cd mlflow-example'
+  
+  
+  
   sh 'python3 train.py 0.43'
     //deploy to port 1235
   //sh 'python3 -m pip install mlflow'
