@@ -38,7 +38,7 @@ node {
   // Test
   stage 'Build Serving container'
   echo 'Build TensorFlow Serving Container.'
-  //sh 'git clone https://github.com/mlflow/mlflow-example'
+  sh 'git clone https://github.com/mlflow/mlflow-example'
   sh 'cd mlflow-example/'
   //sh 'git clone https://github.com/mlflow/mlflow-example'
   
