@@ -34,7 +34,7 @@ node {
   // Test
   stage 'Test' 
   echo 'Test accuracy and measure inference time.'
-  sh 'python3 /home/sgawande/Documents/ci/mlflow/mlflow-example/train.py 0.43'
+  sh 'python3 /home/sgawande/Documents/cii/mlflow/mlflow-example/train.py 0.43'
 
 
   // Test
