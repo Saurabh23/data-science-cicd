@@ -21,7 +21,7 @@ node {
      
 
    //sh 'python --version'
-   sh 'python3 --version' 
+   //sh 'python3 --version' 
    
    //sh 'python3 wine_mlflow.py 0.11 0.10'
    
@@ -34,6 +34,8 @@ node {
   // Test
   stage 'Test' 
   echo 'Test accuracy and measure inference time.'
+  sh 'python3 /home/sgawande/Documents/ci/mlflow/mlflow-example/train.py 0.43'
+
 
   // Test
   stage 'Build Serving container'
@@ -46,7 +48,6 @@ node {
   
   
   
-  sh 'python3 /home/sgawande/Documents/ci/mlflow/mlflow-example/train.py 0.43'
     //deploy to port 1235
   //sh 'python3 -m pip install mlflow'
   //sh 'mlflow pyfunc serve /var/lib/jenkins/workspace/ML Pipeline2/mlruns/0/9abd56d09e7740ff847f8de0fcdbac44/artifacts/model$  -p 1235'
